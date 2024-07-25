@@ -329,8 +329,8 @@ asset::SAssetBundle CImageLoaderJPG::loadAsset(system::IFile* _file, const asset
 	image->setBufferAndRegions(std::move(buffer), regions);
 
 	// TODO: inline hashing while reading
-	auto hash = image->computeContentHash();
-	image->setContentHash(hash);
+	//auto hash = image->computeContentHash();
+	//image->setContentHash(hash);
 
     return SAssetBundle(nullptr,{image});
 
